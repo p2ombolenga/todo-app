@@ -7,7 +7,12 @@
 <h1>Todo List</h1>
 
 <a href="{% url 'task-create' %}">New Task</a>
-
+<form action="" method="get">
+    <center>
+        <input type="text" name="search-area" placeholder="Search" value="{{ search_input }}">
+        <button type="submit">Search</button>
+    </center>
+</form>
 <table border="1" width="50%" align="center">
     <tr>
         <th>Items</th>
